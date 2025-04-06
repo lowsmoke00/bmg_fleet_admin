@@ -1,0 +1,6 @@
+id,date,expense_name,category,payment_type,amount,notes,receipt_url,user_id
+"3fa85f64-5717-4562-b3fc-2c963f66afa6","2023-11-15","Fuel","Transport","M-Pesa",12500.00,"Fuel for Nairobi-Mombasa trip","https://storage.supabase.co/receipts/fuel-mombasa.jpg","auth123-456-789"
+"3fa85f64-5717-4562-b3fc-2c963f66afb7","2023-11-16","Vehicle Service","Maintenance","Cash",8500.00,"Routine service at AutoXpress","https://storage.supabase.co/receipts/service-nov23.pdf","auth123-456-789"
+"3fa85f64-5717-4562-b3fc-2c963f66afc8","2023-11-17","Toll Fee","Transport","M-Pesa",1200.00,"Mlolongo toll station","","auth987-654-321"
+"3fa85f64-5717-4562-b3fc-2c963f66afd9","2023-11-18","Driver Allowance","Staff","M-Pesa",3000.00,"Daily allowance for driver J.Mwangi","","auth987-654-321"
+"3fa85f64-5717-4562-b3fc-2c963f66afe0","2023-11-19","Insurance Renewal","Administrative","Bank Transfer",45000.00,"Annual insurance - Directline Assurance","https://storage.supabase.co/receipts/insurance-2023.pdf","auth123-456-789"
