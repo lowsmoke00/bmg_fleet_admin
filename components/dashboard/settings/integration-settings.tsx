@@ -1,11 +1,11 @@
-"use client"
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { CreditCard, MapPin, MessageSquare, LinkIcon } from "lucide-react"
+"use client";
+import { Button } from "@/components/ui/button";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CreditCard, MapPin, MessageSquare, LinkIcon } from "lucide-react";
 
 export function IntegrationSettings() {
   return (
@@ -18,6 +18,7 @@ export function IntegrationSettings() {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* M-Pesa Integration Card */}
         <Card>
           <CardHeader className="pb-2">
             <div className="flex items-center justify-between">
@@ -29,9 +30,7 @@ export function IntegrationSettings() {
                 Connected
               </Badge>
             </div>
-            <CardDescription>
-              Process payments via M-Pesa
-            </CardDescription>
+            <CardDescription>Process payments via M-Pesa</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -59,6 +58,7 @@ export function IntegrationSettings() {
           </CardContent>
         </Card>
         
+        {/* Google Maps API Integration Card */}
         <Card>
           <CardHeader className="pb-2">
             <div className="flex items-center justify-between">
@@ -70,9 +70,7 @@ export function IntegrationSettings() {
                 Connected
               </Badge>
             </div>
-            <CardDescription>
-              Track vehicles and optimize routes
-            </CardDescription>
+            <CardDescription>Track vehicles and optimize routes</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -94,6 +92,7 @@ export function IntegrationSettings() {
           </CardContent>
         </Card>
         
+        {/* Africa's Talking SMS Integration Card */}
         <Card>
           <CardHeader className="pb-2">
             <div className="flex items-center justify-between">
@@ -105,9 +104,7 @@ export function IntegrationSettings() {
                 Connected
               </Badge>
             </div>
-            <CardDescription>
-              Send SMS notifications and alerts
-            </CardDescription>
+            <CardDescription>Send SMS notifications and alerts</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -135,6 +132,7 @@ export function IntegrationSettings() {
           </CardContent>
         </Card>
         
+        {/* NTSA API Integration Card */}
         <Card>
           <CardHeader className="pb-2">
             <div className="flex items-center justify-between">
@@ -146,11 +144,30 @@ export function IntegrationSettings() {
                 Not Connected
               </Badge>
             </div>
-            <CardDescription>
-              Verify vehicle and driver compliance
-            </CardDescription>
+            <CardDescription>Verify vehicle and driver compliance</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              <div className="grid grid-cols-2\
-
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="ntsa-api-key">API Key</Label>
+                  <Input id="ntsa-api-key" type="password" defaultValue="••••••••••••••••" />
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-between">
+                <div>
+                  <Label htmlFor="ntsa-enabled" className="font-medium">Enable NTSA Integration</Label>
+                  <p className="text-sm text-muted-foreground">Verify vehicle and driver compliance.</p>
+                </div>
+                <Switch id="ntsa-enabled" />
+              </div>
+              
+              <Button variant="outline" className="w-full">Reconnect</Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+}

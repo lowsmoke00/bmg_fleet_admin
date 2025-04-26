@@ -1,0 +1,122 @@
+app
+├── dashboard
+│   dashboard
+│   ├── drivers
+│   │   drivers
+│   │   └── page.tsx
+│   ├── expenses
+│   │   expenses
+│   │   └── page.tsx
+│   ├── fleet
+│   │   fleet
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   ├── maintenance
+│   │   maintenance
+│   │   └── page.tsx
+│   ├── page.tsx
+│   ├── reports
+│   │   reports
+│   │   └── page.tsx
+│   └── settings
+│       settings
+│       └── page.tsx
+├── login
+│   ├── page.tsx
+
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
+components
+├── dashboard
+│   dashboard
+│   ├── drivers-performance.tsx
+│   ├── drivers-summary.tsx
+│   ├── drivers-table.tsx
+│   ├── expenses-filter.tsx
+│   ├── expenses-summary.tsx
+│   ├── expenses-table.tsx
+│   ├── fleet-status.tsx
+│   ├── fleet-summary.tsx
+│   ├── fleet-table.tsx
+│   ├── graphical-reports.tsx
+│   ├── header.tsx
+│   ├── maintenance-history.tsx
+│   ├── maintenance-schedule.tsx
+│   ├── maintenance-summary.tsx
+│   ├── map-and-alerts.tsx
+│   ├── reports-charts.tsx
+│   ├── reports-filter.tsx
+│   ├── reports-summary.tsx
+│   ├── settings
+│   │   settings
+│   │   ├── billing-settings.tsx
+│   │   ├── company-settings.tsx
+│   │   ├── integration-settings.tsx
+│   │   ├── notification-settings.tsx
+│   │   └── user-settings.tsx
+│   ├── settings-tabs.tsx
+│   ├── sidebar.tsx
+│   └── summary-cards.tsx
+├── theme-provider.tsx
+└── ui
+    ui
+    ├── accordion.tsx
+    ├── alert-dialog.tsx
+    ├── alert.tsx
+    ├── aspect-ratio.tsx
+    ├── avatar.tsx
+    ├── badge.tsx
+    ├── breadcrumb.tsx
+    ├── button.tsx
+    ├── calendar.tsx
+    ├── card.tsx
+    ├── carousel.tsx
+    ├── chart.tsx
+    ├── checkbox.tsx
+    ├── collapsible.tsx
+    ├── command.tsx
+    ├── context-menu.tsx
+    ├── dialog.tsx
+    ├── drawer.tsx
+    ├── dropdown-menu.tsx
+    ├── form.tsx
+    ├── hover-card.tsx
+    ├── input-otp.tsx
+    ├── input.tsx
+    ├── label.tsx
+    ├── menubar.tsx
+    ├── navigation-menu.tsx
+    ├── pagination.tsx
+    ├── popover.tsx
+    ├── progress.tsx
+    ├── radio-group.tsx
+    ├── resizable.tsx
+    ├── scroll-area.tsx
+    ├── select.tsx
+    ├── separator.tsx
+    ├── sheet.tsx
+    ├── sidebar.tsx
+    ├── skeleton.tsx
+    ├── slider.tsx
+    ├── sonner.tsx
+    ├── switch.tsx
+    ├── table.tsx
+    ├── tabs.tsx
+    ├── textarea.tsx
+    ├── toast.tsx
+    ├── toaster.tsx
+    ├── toggle-group.tsx
+    ├── toggle.tsx
+    ├── tooltip.tsx
+    ├── use-mobile.tsx
+    └── use-toast.ts
+
+hooks
+├── use-mobile.tsx
+└── use-toast.ts
+
+lib
+└── utils.ts
+

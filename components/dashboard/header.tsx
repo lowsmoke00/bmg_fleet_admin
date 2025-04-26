@@ -27,7 +27,7 @@ export function DashboardHeader() {
               <AvatarFallback>MN</AvatarFallback>
             </Avatar>
             <div>
-              <p className="font-semibold">Mwangi</p>
+              <p className="font-semibold">Biwott</p>
               <p className="text-sm text-muted-foreground">Admin</p>
             </div>
           </div>

@@ -1,16 +1,19 @@
-import type { Metadata } from "next"
-import { SummaryCards } from "@/components/dashboard/summary-cards"
-import { MapAndAlerts } from "@/components/dashboard/map-and-alerts"
-import { GraphicalReports } from "@/components/dashboard/graphical-reports"
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from "@/components/ui/breadcrumb"
-import { HomeIcon } from "lucide-react"
+import { Metadata } from "next";
+import { validateRole } from "@/lib/auth";
+import { SummaryCards } from "@/components/dashboard/summary-cards";
+import { MapAndAlerts } from "@/components/dashboard/map-and-alerts";
+import { GraphicalReports } from "@/components/dashboard/graphical-reports";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { HomeIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Dashboard | BMG Fleet Management",
   description: "Overview of fleet operations, alerts, financial summaries, and daily activities",
-}
+};
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+  await validateRole(["admin", "driver"]); // Allow both roles
+
   return (
     <div className="p-6 space-y-6">
       <Breadcrumb>
@@ -32,6 +35,5 @@ export default function DashboardPage() {
       <MapAndAlerts />
       <GraphicalReports />
     </div>
-  )
+  );
 }
-

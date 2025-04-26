@@ -1,7 +1,7 @@
-"use client"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { AlertTriangle, Fuel, BlocksIcon as BarrierBlock, Calendar } from "lucide-react"
+"use client";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { AlertTriangle, Fuel, BlocksIcon as BarrierBlock, Calendar } from "lucide-react";
 
 // Alert types with their respective icons and colors
 const alertTypes = {
@@ -75,7 +75,7 @@ export function MapAndAlerts() {
         <CardContent className="p-0 h-[400px] relative">
           <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35853743782!2d36.70730744863284!3d-1.3028617999999908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1712356789012!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11972.490938773413!2d35.2630!3d0.5202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182d7cb1d314f5cf%3A0x6c15b7be1b3c1a53!2sEldoret%2C%20Kenya!5e0!3m2!1sen!2sus!4v1712356789012!5m2!1sen!2sus"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -94,9 +94,9 @@ export function MapAndAlerts() {
         <CardContent className="px-2">
           <div className="space-y-4 max-h-[350px] overflow-y-auto pr-2">
             {alerts.map((alert) => {
-              const AlertIcon = alertTypes[alert.type as keyof typeof alertTypes].icon
-              const alertColor = alertTypes[alert.type as keyof typeof alertTypes].color
-              const severityColor = severityColors[alert.severity as keyof typeof severityColors]
+              const AlertIcon = alertTypes[alert.type as keyof typeof alertTypes].icon;
+              const alertColor = alertTypes[alert.type as keyof typeof alertTypes].color;
+              const severityColor = severityColors[alert.severity as keyof typeof severityColors];
 
               return (
                 <div key={alert.id} className="flex items-start space-x-3 p-3 rounded-lg border bg-card">
@@ -115,12 +115,11 @@ export function MapAndAlerts() {
                     {alert.location && <p className="text-xs text-muted-foreground">{alert.location}</p>}
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }
-
